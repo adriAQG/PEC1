@@ -1,0 +1,554 @@
+/* CSS General */
+
+body {
+    background: #8f7652;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-size: 1.75rem;
+    line-height: 1.3em;
+}
+
+h2{
+    font-size: 1.3rem;
+    line-height: 1.3em;
+}
+
+h3{
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    font-weight: bold;
+    border-bottom: solid 2px;
+}
+
+/* CSS Páginas exepto portada*/
+
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.container a {
+    color: rgb(51, 33, 20);
+    text-decoration: none;
+}
+
+.logo {
+    animation-duration: 0.5s;
+    animation-name: nombreLogo;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+.logo img{
+    animation-duration: 0.5s;
+    animation-name: Logo;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    background: #ac8e61;
+    color: rgb(51, 33, 20);
+    padding: 0.75rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a {
+    color: rgb(51, 33, 20);
+    text-decoration: none;
+}
+
+
+.menu-icon{
+    display: none;
+}
+
+.navigation{
+    animation-duration: 0.5s;
+    animation-name: menu;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li.select {
+    border-radius: 5px;
+    background-color: #d6b789;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background: #d6b789;
+}
+
+.footer {
+    color: rgb(51, 33, 20);
+    background: #ac8e61;
+    padding-top: 2rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 1.3em;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.footer a {
+    color: rgb(51, 33, 20);
+    text-decoration: none;
+}
+
+.main {
+    padding-top: 5rem;
+    margin-bottom: 12rem;
+}
+
+/* CSS PORTADA */
+
+.definicionPortada{
+    font-size: 2rem;
+    line-height: 1.3em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.logo-portada{
+    letter-spacing: 6px;
+    font-size: 5em;    
+    animation-duration: 1s;
+    animation-name: Portada;
+}
+
+.logo-portada img{
+    height: 250px;
+    width: 250px;
+    animation-duration: 1s;
+    animation-name: logoPortada;
+}
+
+.navigation-portada ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-portada ul li {
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 2rem;
+}
+
+.navigation ul li.select {
+    border-radius: 5px;
+    background-color: #d6b789;
+}
+
+.navigation-portada ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+
+.navigation-portada ul li a:hover{
+    background: #d6b789;
+}
+
+.main-portada {
+    padding-top: 3rem;
+    margin-bottom: 12rem;
+}
+
+/* CSS Paginas de Programas */
+
+.table{
+    caption-side: top;
+}
+
+.table tr td{
+    padding-top: 2rem;
+}
+
+.table tr td a{
+    color: #572f0b;
+}
+
+.estancia{
+    color: rgb(66, 62, 62);
+}
+
+.result{
+    color:rgb(51, 33, 20);
+}
+
+.imagenTabla{
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.imagenViaje{
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);;
+}
+
+
+.desViaje{
+    margin-left: 12rem;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.precio{
+    margin-left: 0.5rem;
+    float: right;
+    padding: 0.5rem;
+    width: 3.50rem;
+    background: rgb(37, 32, 25);
+    color: rgb(221, 189, 153);
+}
+
+.boton {
+    border: 2px solid #706047; 
+    padding: 0.5rem; 
+    background-color: #AC8E61;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px; 
+    float: right;
+}
+
+.boton:hover{
+    background-color: #D6B789;
+}
+
+.botonVolver {
+    border: 2px solid #706047; 
+    padding: 0.5rem; 
+    background-color: #AC8E61;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px; 
+    float: left;
+}
+
+.botonVolver:hover{
+    background-color: #D6B789;
+}
+
+.informacion{
+    margin-top: 5rem;
+}
+
+.informacion ul li{
+    font-size: 1rem;
+}
+
+/* Animaciones */
+
+@keyframes logoPortada {
+    from {
+        width:0px;
+        height:0px;
+    }
+
+    to {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@keyframes Portada {
+    from {
+        letter-spacing: 0px;
+        font-size: 0em;
+    }
+
+    to {
+        letter-spacing: 6px;
+        font-size: 5em;
+    }
+}
+
+@keyframes Logo {
+    from {
+        width:0px;
+        height:0px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes nombreLogo {
+    from {
+        font-size: 0em;
+        letter-spacing: 0px;
+    }
+
+    to {
+        font-size: 1.3em;
+        letter-spacing: 5px;
+    }
+}
+
+@keyframes menu {
+    from {
+        font-size: 0em;
+    }
+
+    to {
+        font-size: 1em;
+    }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 986px) {
+    
+    .main {
+        padding-top: 6rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main {
+        padding-top: 7rem;
+    }
+    
+    .menu-icon{
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+    }
+    .navigation{
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+
+    .navigation ul li {
+        display: block;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: rgb(51, 33, 20);
+        font-weight: bold;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+    
+    .navigation ul li a:hover{
+        background: #d6b789;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    
+    .main {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 640px), screen and (max-height: 986px) {
+
+    
+
+    @keyframes logoPortada {
+        from {
+            width:0px;
+            height:0px;
+        }
+    
+        to {
+            width: 225px;
+            height: 225px;
+        }
+    }
+    
+    @keyframes Portada {
+        from {
+            font-size: 0em;
+        }
+        to {
+            font-size: 4em;
+        }
+    }
+
+    .logo-portada{
+        letter-spacing: 6px;
+        font-size: 4em;    
+    }
+
+    .logo-portada img{
+        height: 225px;
+        width: 225px;
+    }
+
+    .navigation-portada ul li {
+        line-height: 1.3em;
+        font-size: 1.5rem;
+    }
+
+    .definicionPortada{
+        font-size: 1.5rem;
+        line-height: 1.1em;
+    }
+
+    .footer{
+        font-size: 1.5rem;
+        line-height: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 560px), screen and (max-height: 720px) {
+
+    .logo-portada{
+        letter-spacing: 6px;
+        font-size: 3em;      
+    }
+
+    @keyframes logoPortada {
+        from {
+            width:0px;
+            height:0px;
+        }
+    
+        to {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    
+    @keyframes Portada {
+        from {
+            font-size: 0em;
+        }
+        to {
+            font-size: 3em;
+        }
+    }
+    
+    .logo-portada img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .definicionPortada{
+        font-size: 1em;
+        line-height: 1.1em;
+    } 
+
+    .navigation-portada ul li {
+        line-height: 1.1em;
+        font-size: 1rem;
+    }
+
+    .footer{
+        font-size: 1rem;
+        line-height: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 432px) {
+
+    @keyframes logoPortada {
+        from {
+            width:0px;
+            height:0px;
+        }
+    
+        to {
+            width: 175px;
+            height: 175px;
+        }
+    }
+    
+    @keyframes Portada {
+        from {
+            font-size: 0em;
+        }
+        to {
+            font-size: 2em;
+        }
+    }
+
+    .logo-portada{
+
+        letter-spacing: 6px;
+        font-size: 2em;    
+    
+    }
+    
+    .logo-portada img{
+        height: 175px;
+        width: 175px;
+    }
+
+    .footer{
+        font-size: 1rem;
+        line-height: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 406px) {
+
+    .main {
+        padding-top: 9.5rem; 
+    }
+
+}
